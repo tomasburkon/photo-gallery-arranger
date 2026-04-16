@@ -1,3 +1,4 @@
+### Setup Photo Gallery Arranger with docker-compose.yml
 docker run -p 5000:5000 -v C:\Path\To\Photos:/input -v C:\Path\To\Output:/output tomasburkon/sort-photos-portable:latest
 -----------------------------------------
 
