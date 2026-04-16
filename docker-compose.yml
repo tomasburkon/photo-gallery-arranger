@@ -1,0 +1,11 @@
+services:
+  photo-gallery:
+    image: tomasburkon/sort-photos-portable:latest
+    container_name: photo-gallery
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./input:/input        # Drop your photos here
+      - ./output:/output      # Organized albums appear here
+      - ./data:/data          # Persistent metadata state
+    restart: unless-stopped
